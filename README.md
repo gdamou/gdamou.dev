@@ -1,9 +1,7 @@
-# 👨‍🚀 Astro - Portfolio Template
+# 👨‍🚀 Portfolio
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
-
-![Template](https://github.com/MaeWolff/astro-portfolio-template/blob/main/public/opengraph-image.jpg)
 
 Template by [him](https://www.maxencewolff.com).
 ## Contributors ✨
