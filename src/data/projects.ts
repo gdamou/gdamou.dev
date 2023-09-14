@@ -7,15 +7,14 @@ export type Project = {
 
 const projects: Project[] = [
     {
-        title: 'Rocket League Esport Bot',
-        techs: ['DiscordJS', 'TypeScript'],
-        link: 'https://github.com/gdamou/rocket-league-esport-bot',
+        title: 'Rep Tracker',
+        techs: ['Typescript', 'Fastify', 'TRPC', 'Zod', 'React', 'PandaCSS'],
+        link: 'https://github.com/gdamou/reptracker',
     },
     {
-        title: 'Rep Tracker',
-        techs: ['Typescript', 'fastify', 'trpc', 'zod', 'React', 'PandaCSS'],
-        link: '/',
-        isComingSoon: true,
+        title: 'Rocket League Esport Bot',
+        techs: ['TypeScript', 'DiscordJS'],
+        link: 'https://github.com/gdamou/rocket-league-esport-bot',
     },
     {
         title: 'My Dream Game',
