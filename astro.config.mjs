@@ -1,17 +1,22 @@
-import { defineConfig } from "astro/config";
-import tailwind from "@astrojs/tailwind";
-import sitemap from "@astrojs/sitemap";
-import { SITE_URL } from "./src/data/config";
+import react from '@astrojs/react'
+import sitemap from '@astrojs/sitemap'
+import pandacss from '@pandacss/astro'
+import { defineConfig } from 'astro/config'
+import { SITE_URL } from './src/data/config'
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), sitemap()],
   site: SITE_URL,
   markdown: {
-    syntaxHighlight: "shiki",
+    syntaxHighlight: 'shiki',
     shikiConfig: {
-      theme: "nord",
+      theme: 'nord',
       wrap: false,
     },
   },
-});
+  integrations: [
+    sitemap(),
+    react(),
+    pandacss(),
+  ],
+})

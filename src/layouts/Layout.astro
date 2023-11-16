@@ -1,17 +1,14 @@
 ---
-import Header from "../components/Header.astro";
-import BlurCircle from "@/components/shared/BlurCircle.astro";
-import theme from "@/data/theme";
-import SEOTags from "@/components/seo/SEOTags.astro";
-import type { HeadTags } from "@/utils/types/HeadTags";
+import { EarthBackground } from '@/components/EarthBackground'
+import SEOTags from '@/components/seo/SEOTags.astro'
+import type { HeadTags } from '@/utils/types/HeadTags'
 
-import "@fontsource/open-sans";
-import "@/styles/tailwind.css";
-import "@/styles/post.css";
+import { css } from 'styled-system/css'
+import { container } from 'styled-system/patterns'
 
-export type Props = HeadTags;
+export type Props = HeadTags
 
-const headTags = Astro.props;
+const headTags = Astro.props
 ---
 
 <!DOCTYPE html>
@@ -19,15 +16,28 @@ const headTags = Astro.props;
   <SEOTags {...headTags} />
 
   <body
-    class="mx-auto flex min-h-screen max-w-[872px] flex-col gap-9 bg-neutral-950 px-10 py-8 text-sm text-neutral-400 md:gap-20 md:py-16"
+    class={container({
+      mx: 'auto',
+      display: 'flex',
+      minH: 'screen',
+      overflowY: 'scroll',
+      maxW: '1080px',
+      flexDir: 'column',
+      gap: '9',
+      bgColor: 'background',
+      px: '10',
+      py: '8',
+      textStyle: 'sm',
+      color: 'white',
+      md: { gap: '12', pt: '16', pb: '16' },
+    })}
   >
-    <Header />
-    <BlurCircle position="top" color={theme.colors.blur.top} />
-    <BlurCircle position="bottom" color={theme.colors.blur.bottom} />
-    <slot />
+    <EarthBackground />
+
+    <div class={css({ position: 'relative' })}><slot /></div>
     <style is:global>
       html {
-        font-family: "Open Sans";
+        font-family: 'Poppins', sans-serif;
       }
     </style>
   </body>
