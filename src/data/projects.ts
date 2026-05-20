@@ -17,17 +17,17 @@ const projects: Project[] = [
     link: 'https://dashboard.twitch.tv/extensions/vztbpgp078b444w7vvuwxz2cmm85k1-0.0.1',
   },
   {
-    title: 'Rep Tracker',
-    summary: 'My personal app to track my weightlifting progression.',
-    techs: ['Typescript', 'Fastify', 'React', 'TRPC', 'Zod', 'PandaCSS'],
+    title: 'Otom AI',
+    summary: 'A Chrome extension to analyze LinkedIn profiles and chat with their data via AI.',
+    techs: ['Typescript', 'React', 'Effect', 'WXT', 'Gemini', 'PostgreSQL', 'PandaCSS'],
     description:
-      '*RepTracker* is a custom app for tracking my weightlifting progress.\nBuilt with TypeScript for type safety, it features a *Fastify* backend in a *pnpm monorepo*.\nThe frontend is crafted with *React*, *Vite* for build optimization, *Jotai* and *XState* for state management, and styled with *PandaCSS*.\nIt simplifies logging workouts, creating templates, and analyzing performance.',
-    link: 'https://github.com/gdamou/reptracker',
+      '*Otom AI* is a Chrome extension that analyzes LinkedIn profiles and lets you chat with their data through AI.\nThe backend is built with *Effect* for service composition and dependency injection, paired with *Gemini* for AI generation and *PostgreSQL* for persistence — *Drizzle* handles the schema and migrations, while *Kysely* powers typesafe queries.\nThe extension itself is built on *WXT* with *React* and *TanStack Query* for async state, all styled with *PandaCSS*.\nIt features cross-user caching, a per-user quota system, and a 24h TTL to keep dossiers fresh while minimizing AI generation costs.',
+    link: 'https://otom-ai.com/',
   },
   {
-    title: 'Pet Traveler',
-    summary: 'App regrouping all the information about traveling with your pet.',
-    techs: ['Typescript', 'React', 'Node', 'Fastify', 'PandaCSS'],
+    title: 'Fuda',
+    summary: 'A collectible anime character cards web app, reimagined for the web.',
+    techs: ['Typescript', 'React', 'Vite', 'Effect', 'TanStack Query', 'Zod', 'Chakra UI', 'PostgreSQL'],
     isComingSoon: true,
   },
 ]
